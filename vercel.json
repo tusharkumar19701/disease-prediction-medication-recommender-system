@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api/**/*.py": {
-      "excludeFiles": "{.venv,venv,env,datasets,models,__pycache__}/**"
-    }
-  },
   "builds": [
     {
       "src": "main.py",
