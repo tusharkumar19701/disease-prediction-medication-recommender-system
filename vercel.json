@@ -1,0 +1,25 @@
+{
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/main.py"
+    }
+  ],
+  "excludeFiles": [
+    ".venv/**",
+    "venv/**",
+    "env/**",
+    "datasets/**",
+    "models/**",
+    "__pycache__/**",
+    "*.pyc",
+    ".git/**",
+    ".DS_Store"
+  ]
+}
