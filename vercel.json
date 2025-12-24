@@ -1,4 +1,9 @@
 {
+  "functions": {
+    "api/**/*.py": {
+      "excludeFiles": "{.venv,venv,env,datasets,models,__pycache__}/**"
+    }
+  },
   "builds": [
     {
       "src": "main.py",
@@ -10,16 +15,5 @@
       "src": "/(.*)",
       "dest": "/main.py"
     }
-  ],
-  "excludeFiles": [
-    ".venv/**",
-    "venv/**",
-    "env/**",
-    "datasets/**",
-    "models/**",
-    "__pycache__/**",
-    "*.pyc",
-    ".git/**",
-    ".DS_Store"
   ]
 }
